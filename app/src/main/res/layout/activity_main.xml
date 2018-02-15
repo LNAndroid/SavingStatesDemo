@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="maulik.letsnurture.savingstatesdemo.SaveStatesActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:text="Add"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:onClick="onAddClicked"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_above="@+id/button_add"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="Rotate screen and click ADD to check if count is maintained or not"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
